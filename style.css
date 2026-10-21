@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+/* Logic Filter Tab Katalog via Radio Button & CSS Selector */
+#tab-semua:checked~#court-grid .court-card {
+    display: flex;
+}
+
+#tab-futsal:checked~#court-grid .court-card:not(.cat-futsal) {
+    display: none;
+}
+
+       #tab-badminton:checked~#court-grid .court-card:not(.cat-badminton) {
+           display: none;
+       }
+
+       #tab-minisoccer:checked~#court-grid .court-card:not(.cat-minisoccer) {
+           display: none;
+       }
+
+       #tab-tenis:checked~#court-grid .court-card:not(.cat-tenis) {
+           display: none;
+       }
+
+       /* Highlight Tab Aktif */
+       #tab-semua:checked~.tabs-container label[for="tab-semua"],
+       #tab-futsal:checked~.tabs-container label[for="tab-futsal"],
+       #tab-badminton:checked~.tabs-container label[for="tab-badminton"],
+       #tab-minisoccer:checked~.tabs-container label[for="tab-minisoccer"],
+       #tab-tenis:checked~.tabs-container label[for="tab-tenis"] {
+           background-color: #ffffff;
+           color: #047857;
+           box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+       }
+
+       /* Modal Overlay via CSS :target */
+       .modal-overlay {
+           display: none;
+       }
+
+       .modal-overlay:target {
+           display: flex;
+       }

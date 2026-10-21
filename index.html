@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RuangSewa - Platform Booking Lapangan Olahraga</title>
+
+    <!-- Tailwind CSS Play CDN Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans antialiased">
+
+    <!-- 1. HEADER / NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-200 w-full">
+        <div class="w-full px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between gap-8">
+            <!-- Zone 1: Brand Logo -->
+            <a href="#"
+                class="flex items-center gap-2 text-xl font-bold tracking-tight text-gray-900 whitespace-nowrap shrink-0">
+                <div
+                    class="w-9 h-9 rounded-xl bg-green-600 flex items-center justify-center text-white font-extrabold text-lg shadow-sm">
+                    R
+                </div>
+                <span>Ruang<span class="text-green-600">Sewa</span></span>
+            </a>
+
+            <!-- Zone 2: Navigasi Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <a href="#beranda" class="hover:text-green-700 transition-colors whitespace-nowrap">Beranda</a>
+                <a href="#keunggulan" class="hover:text-green-700 transition-colors whitespace-nowrap">Keunggulan</a>
+                <a href="#cara-kerja" class="hover:text-green-700 transition-colors whitespace-nowrap">Cara Kerja</a>
+                <a href="#katalog" class="hover:text-green-700 transition-colors whitespace-nowrap">Katalog Lapangan</a>
+                <a href="#faq" class="hover:text-green-700 transition-colors whitespace-nowrap">FAQ</a>
+            </nav>
+
+            <!-- Zone 3: CTA Button -->
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="#modal-mitra"
+                    class="px-4 py-2.5 text-xs sm:text-sm font-semibold text-gray-900 bg-yellow-500 rounded-xl hover:bg-yellow-400 transition-all shadow-sm whitespace-nowrap">
+                    Daftar Jadi Mitra
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section id="beranda" class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden w-full">
+        <div class="w-full px-4 sm:px-6 lg:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="flex items-center gap-2 text-xs md:text-sm font-semibold text-green-700 tracking-wide">
+                        <span>Platform Booking Lapangan Olahraga #1 di Indonesia</span>
+                        <span aria-hidden="true" class="text-gray-300">·</span>
+                        <span>Terverifikasi Real-Time</span>
+                    </div>
+
+                    <h1
+                        class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                        Cari & Booking Lapangan Olahraga <span class="text-green-600">Tanpa Antre</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
+                        Temukan arena futsal, badminton, mini soccer, dan tenis terdekat dengan jadwal live yang selalu
+                        transparan. Langsung bayar praktis dan terima E-Ticket tanpa perlu menunggu balasan chat manual.
+                    </p>
+
+                    <div class="pt-2 grid grid-cols-3 gap-4 border-t border-gray-200 pt-6">
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-gray-900 font-mono">1.200+</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-0.5">Lapangan Terdaftar</div>
+                        </div>
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-gray-900 font-mono">48.500+</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-0.5">Sesi Berhasil Selesai</div>
+                        </div>
+                        <div>
+                            <div class="text-xl sm:text-2xl font-bold text-green-600 font-mono">99.8%</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-0.5">Bebas Double-Booking</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Banner -->
+                <div class="lg:col-span-5 relative">
+                    <div
+                        class="relative rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-gray-900 aspect-w-16 aspect-h-11">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80"
+                            alt="Arena Olahraga Modern" class="w-full h-64 object-cover">
+                        <div class="p-4 bg-gray-900 text-white rounded-b-2xl">
+                            <div class="flex items-center justify-between mb-1.5">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-green-400">Sistem
+                                    Real-Time Aktif</span>
+                                <span class="text-xs font-mono text-gray-300">Update Live</span>
+                            </div>
+                            <p class="text-xs sm:text-sm font-medium text-gray-100">
+                                Slot malam ini di Jakarta & sekitarnya tersisa 42 jam sewa. Amankan waktu bertanding tim
+                                Anda sekarang!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEARCH FORM (FORM HTML MURNI) -->
+            <div class="mt-10 sm:mt-12 bg-white rounded-2xl border border-gray-200 shadow-md p-4 sm:p-6">
+                <form action="#katalog" method="GET">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-600 mb-1.5">Cabang Olahraga</label>
+                            <select
+                                class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2.5 text-sm font-medium text-gray-800 focus:outline-none">
+                                <option value="Semua">Semua Olahraga</option>
+                                <option value="Futsal">Futsal</option>
+                                <option value="Badminton">Badminton</option>
+                                <option value="Mini Soccer">Mini Soccer</option>
+                                <option value="Tenis">Tenis & Padel</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-600 mb-1.5">Kota / Wilayah</label>
+                            <select
+                                class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2.5 text-sm font-medium text-gray-800 focus:outline-none">
+                                <option value="Semua Kota">Semua Kota</option>
+                                <option value="Jakarta Selatan">Jakarta Selatan</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Tangerang">Tangerang & BSD</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-600 mb-1.5">Tanggal Main</label>
+                            <input type="date" value="2026-10-18"
+                                class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2 text-sm font-medium text-gray-800 focus:outline-none">
+                        </div>
+
+                        <div>
+                            <a href="#katalog"
+                                class="w-full h-10 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold text-sm rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                                <span>Cari Lapangan</span>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. VALUE PROPOSITION -->
+    <section id="keunggulan" class="py-20 md:py-24 bg-white border-y border-gray-200 w-full">
+        <div class="w-full px-4 sm:px-6 lg:px-10">
+            <div class="max-w-2xl mx-auto text-center mb-16 space-y-3">
+                <h2 class="text-xs md:text-sm font-semibold tracking-wider uppercase text-green-700">Nilai Tambah
+                    RuangSewa</h2>
+                <p class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">Booking Tanpa Drama,
+                    Olahraga Lebih Puas</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-200 shadow-sm flex flex-col">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-green-700 font-bold text-xl mb-6">
+                        ⚡</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">100% Real-Time & Transparan</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Kalender slot lapangan tersinkronisasi langsung dengan sistem venue. Jam yang tertera adalah jam
+                        yang siap disewa.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-200 shadow-sm flex flex-col">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center text-yellow-700 font-bold text-xl mb-6">
+                        💳</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Pembayaran Praktis & E-Ticket</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Selesaikan pembayaran dalam hitungan detik via QRIS atau Virtual Account. E-Ticket terbit
+                        otomatis.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-200 shadow-sm flex flex-col">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-green-700 font-bold text-xl mb-6">
+                        🛡️</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Garansi Anti Double-Booking</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Sistem smart-lock otomatis mengamankan slot selama transaksi dengan proteksi garansi 100%.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CARA KERJA -->
+    <section id="cara-kerja" class="py-20 md:py-24 w-full">
+        <div class="w-full px-4 sm:px-6 lg:px-10">
+            <div class="max-w-2xl mx-auto text-center mb-16 space-y-3">
+                <h2 class="text-xs md:text-sm font-semibold tracking-wider uppercase text-green-700">Alur Reservasi</h2>
+                <p class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">3 Langkah Praktis Menuju
+                    Kickoff</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm">
+                    <div class="text-3xl font-extrabold text-green-600 font-mono mb-4">01</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Pilih Cabang & Lokasi</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Cari lapangan futsal, badminton, mini soccer, atau
+                        tenis terdekat dengan kriteria impian Anda.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm">
+                    <div class="text-3xl font-extrabold text-yellow-500 font-mono mb-4">02</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Pilih Jam & Bayar Seketika</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Tentukan jam sewa yang cocok pada kalender
+                        transparan, lalu bayar instan menggunakan QRIS.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm">
+                    <div class="text-3xl font-extrabold text-green-600 font-mono mb-4">03</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Tunjukkan E-Ticket & Main</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Pindai QR Code E-Ticket di resepsionis venue dan
+                        nikmati pertandingan bersama tim Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. KATALOG LAPANGAN POPULER (FILTER CSS MURNI) -->
+    <section id="katalog" class="py-20 md:py-24 bg-white border-t border-gray-200 w-full">
+        <div class="w-full px-4 sm:px-6 lg:px-10">
+
+            <!-- Radio Inputs Tersembunyi Untuk Logika Filter -->
+            <input type="radio" id="tab-semua" name="category-filter" class="hidden" checked>
+            <input type="radio" id="tab-futsal" name="category-filter" class="hidden">
+            <input type="radio" id="tab-badminton" name="category-filter" class="hidden">
+            <input type="radio" id="tab-minisoccer" name="category-filter" class="hidden">
+            <input type="radio" id="tab-tenis" name="category-filter" class="hidden">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <h2 class="text-xs md:text-sm font-semibold tracking-wider uppercase text-green-700">Pilihan Terbaik
+                    </h2>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight mt-1">Katalog Lapangan
+                        Terpopuler</p>
+                </div>
+
+                <!-- Filter Tab Buttons (Label HTML) -->
+                <div
+                    class="tabs-container flex items-center gap-1.5 p-1 bg-gray-100 border border-gray-200 rounded-xl overflow-x-auto">
+                    <label for="tab-semua"
+                        class="px-3.5 py-1.5 text-xs sm:text-sm font-semibold rounded-lg text-gray-600 cursor-pointer transition">Semua</label>
+                    <label for="tab-futsal"
+                        class="px-3.5 py-1.5 text-xs sm:text-sm font-semibold rounded-lg text-gray-600 cursor-pointer transition">Futsal</label>
+                    <label for="tab-badminton"
+                        class="px-3.5 py-1.5 text-xs sm:text-sm font-semibold rounded-lg text-gray-600 cursor-pointer transition">Badminton</label>
+                    <label for="tab-minisoccer"
+                        class="px-3.5 py-1.5 text-xs sm:text-sm font-semibold rounded-lg text-gray-600 cursor-pointer transition">Mini
+                        Soccer</label>
+                    <label for="tab-tenis"
+                        class="px-3.5 py-1.5 text-xs sm:text-sm font-semibold rounded-lg text-gray-600 cursor-pointer transition">Tenis</label>
+                </div>
+            </div>
+
+            <!-- Grid Katalog Kartu Lapangan -->
+            <div id="court-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Futsal Card -->
+                <div
+                    class="court-card cat-futsal group bg-white rounded-2xl border border-gray-200 shadow-sm flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-gray-300">
+                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80"
+                            alt="Futsal Arena"
+                            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110">
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 text-xs text-gray-500 mb-1">
+                            <span class="font-semibold text-green-700">Futsal</span> · <span>Jakarta Selatan</span> ·
+                            <span class="text-yellow-600 font-semibold">★ 4.9</span>
+                        </div>
+                        <h3 class="text-base font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                            Giga Futsal Arena Cilandak</h3>
+                        <p class="text-xs text-gray-500 mb-4">Interlock Vinyl FIFA Standard</p>
+                        <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <div class="text-xs text-gray-400">Mulai dari</div>
+                                <div class="text-sm font-bold text-gray-900">Rp 180.000 <span
+                                        class="text-xs font-normal text-gray-500">/jam</span></div>
+                            </div>
+                            <a href="#modal-booking-1"
+                                class="px-3 py-1.5 text-xs font-bold text-white bg-green-600 hover:bg-green-700 active:scale-95 rounded-lg shadow-sm transition-all">Pilih
+                                Slot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badminton Card -->
+                <div
+                    class="court-card cat-badminton group bg-white rounded-2xl border border-gray-200 shadow-sm flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-gray-300">
+                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80"
+                            alt="Badminton Hall"
+                            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110">
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 text-xs text-gray-500 mb-1">
+                            <span class="font-semibold text-green-700">Badminton</span> · <span>Jakarta Selatan</span> ·
+                            <span class="text-yellow-600 font-semibold">★ 4.8</span>
+                        </div>
+                        <h3 class="text-base font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                            Champions Badminton Hall</h3>
+                        <p class="text-xs text-gray-500 mb-4">Taraflex BWF Approved Floor</p>
+                        <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <div class="text-xs text-gray-400">Mulai dari</div>
+                                <div class="text-sm font-bold text-gray-900">Rp 85.000 <span
+                                        class="text-xs font-normal text-gray-500">/jam</span></div>
+                            </div>
+                            <a href="#modal-booking-1"
+                                class="px-3 py-1.5 text-xs font-bold text-white bg-green-600 hover:bg-green-700 active:scale-95 rounded-lg shadow-sm transition-all">Pilih
+                                Slot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mini Soccer Card -->
+                <div
+                    class="court-card cat-minisoccer group bg-white rounded-2xl border border-gray-200 shadow-sm flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-gray-300">
+                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&w=800&q=80"
+                            alt="Mini Soccer Stadium"
+                            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110">
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 text-xs text-gray-500 mb-1">
+                            <span class="font-semibold text-green-700">Mini Soccer</span> · <span>Bandung</span> ·
+                            <span class="text-yellow-600 font-semibold">★ 4.95</span>
+                        </div>
+                        <h3 class="text-base font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                            Sentul Prime Mini Soccer</h3>
+                        <p class="text-xs text-gray-500 mb-4">Rumput Sintetis Monofilament 50mm</p>
+                        <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <div class="text-xs text-gray-400">Mulai dari</div>
+                                <div class="text-sm font-bold text-gray-900">Rp 450.000 <span
+                                        class="text-xs font-normal text-gray-500">/jam</span></div>
+                            </div>
+                            <a href="#modal-booking-1"
+                                class="px-3 py-1.5 text-xs font-bold text-white bg-green-600 hover:bg-green-700 active:scale-95 rounded-lg shadow-sm transition-all">Pilih
+                                Slot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tennis Card -->
+                <div
+                    class="court-card cat-tenis group bg-white rounded-2xl border border-gray-200 shadow-sm flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-gray-300">
+                    <div class="relative overflow-hidden aspect-[4/3] bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=800&q=80"
+                            alt="Tennis Court"
+                            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110">
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 text-xs text-gray-500 mb-1">
+                            <span class="font-semibold text-green-700">Tenis</span> · <span>Tangerang</span> ·
+                            <span class="text-yellow-600 font-semibold">★ 4.85</span>
+                        </div>
+                        <h3 class="text-base font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                            Grand Slam Padel & Tennis</h3>
+                        <p class="text-xs text-gray-500 mb-4">DecoTurf Acrylic Hard Court</p>
+                        <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <div class="text-xs text-gray-400">Mulai dari</div>
+                                <div class="text-sm font-bold text-gray-900">Rp 150.000 <span
+                                        class="text-xs font-normal text-gray-500">/jam</span></div>
+                            </div>
+                            <a href="#modal-booking-1"
+                                class="px-3 py-1.5 text-xs font-bold text-white bg-green-600 hover:bg-green-700 active:scale-95 rounded-lg shadow-sm transition-all">Pilih
+                                Slot</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. BANNER CTA MITRA -->
+    <section class="py-16 md:py-20 w-full px-4 sm:px-6 lg:px-10">
+        <div
+            class="w-full relative rounded-3xl bg-gray-900 border border-gray-800 p-8 sm:p-12 lg:p-16 text-white shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <span class="inline-block text-xs font-bold tracking-wider uppercase text-yellow-400">Kemitraan
+                        Pengelola Lapangan</span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white">Punya Lapangan
+                        Olahraga? Maksimalkan Okupansi & Pendapatan Anda</h2>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        Bergabunglah bersama 500+ venue rekanan di RuangSewa untuk otomatisasi jadwal sewa, sistem
+                        pembayaran non-tunai, dan eksposur ke puluhan ribu pemain setiap bulan.
+                    </p>
+                </div>
+                <div class="lg:col-span-4 flex flex-col gap-3 justify-center">
+                    <a href="#modal-mitra"
+                        class="px-6 py-3.5 text-sm font-bold text-gray-900 bg-yellow-500 rounded-xl hover:bg-yellow-400 transition-all shadow-md text-center">
+                        Daftar Jadi Mitra Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQ SECTION (ACCORDION VIA HTML <details>) -->
+    <section id="faq" class="py-20 md:py-24 bg-white border-t border-gray-200 w-full">
+        <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-10">
+            <div class="text-center mb-14 space-y-2">
+                <h2 class="text-xs md:text-sm font-semibold tracking-wider uppercase text-green-700">Pusat Informasi
+                </h2>
+                <p class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">Pertanyaan yang Sering
+                    Diajukan</p>
+            </div>
+
+            <div class="space-y-3">
+                <details class="group rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+                    <summary
+                        class="w-full text-left px-6 py-5 flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none select-none">
+                        <span class="text-sm sm:text-base">Bagaimana RuangSewa menjamin tidak ada jadwal bentrok?</span>
+                        <span class="text-gray-400 transition-transform group-open:rotate-180">▼</span>
+                    </summary>
+                    <div class="px-6 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3 leading-relaxed">
+                        Sistem terhubung API kalender real-time. Slot dikunci otomatis selama 10 menit saat Anda
+                        melakukan checkout transaksi.
+                    </div>
+                </details>
+
+                <details class="group rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+                    <summary
+                        class="w-full text-left px-6 py-5 flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none select-none">
+                        <span class="text-sm sm:text-base">Metode pembayaran apa saja yang diterima?</span>
+                        <span class="text-gray-400 transition-transform group-open:rotate-180">▼</span>
+                    </summary>
+                    <div class="px-6 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3 leading-relaxed">
+                        RuangSewa mendukung QRIS (GoPay, OVO, ShopeePay, DANA), Virtual Account Bank (BCA, Mandiri, BNI,
+                        BRI), serta Kartu Debit/Kredit.
+                    </div>
+                </details>
+
+                <details class="group rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+                    <summary
+                        class="w-full text-left px-6 py-5 flex items-center justify-between font-bold text-gray-900 cursor-pointer list-none select-none">
+                        <span class="text-sm sm:text-base">Bagaimana cara check-in di arena olahraga?</span>
+                        <span class="text-gray-400 transition-transform group-open:rotate-180">▼</span>
+                    </summary>
+                    <div class="px-6 pb-5 text-sm text-gray-600 border-t border-gray-100 pt-3 leading-relaxed">
+                        Setelah pembayaran sukses, tunjukkan QR Code E-Ticket digital yang terkirim di WhatsApp atau
+                        email Anda kepada staf resepsionis venue.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 pt-16 pb-12 border-t border-gray-800 w-full">
+        <div class="w-full px-4 sm:px-6 lg:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-gray-800">
+
+                <!-- Brand column -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-2.5 text-xl font-bold tracking-tight text-white">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-green-600 flex items-center justify-center text-white font-extrabold text-base">
+                            R
+                        </div>
+                        <span>
+                            Ruang<span class="text-green-500">Sewa</span>
+                        </span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed max-w-sm">
+                        Platform reservasi lapangan olahraga digital terpercaya. Temukan venue futsal, badminton, mini
+                        soccer, dan tenis terdekat dengan ketersediaan jadwal 100% transparan.
+                    </p>
+                    <div class="text-xs text-gray-500">
+                        PT Ruang Sewa Digital Nusantara · Jakarta Selatan, Indonesia
+                    </div>
+                </div>
+
+                <!-- Kategori Cabang -->
+                <div>
+                    <h4 class="text-xs font-bold tracking-wider text-white uppercase mb-4">Cabang Olahraga</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#katalog" class="hover:text-white transition">Lapangan Futsal</a></li>
+                        <li><a href="#katalog" class="hover:text-white transition">Lapangan Badminton</a></li>
+                        <li><a href="#katalog" class="hover:text-white transition">Mini Soccer Field</a></li>
+                        <li><a href="#katalog" class="hover:text-white transition">Tenis & Padel Court</a></li>
+                    </ul>
+                </div>
+
+                <!-- Navigasi Platform -->
+                <div>
+                    <h4 class="text-xs font-bold tracking-wider text-white uppercase mb-4">Platform</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#beranda" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#cara-kerja" class="hover:text-white transition">Cara Reservasi</a></li>
+                        <li><a href="#modal-mitra" class="hover:text-white transition">Gabung Mitra Venue</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">Pusat Bantuan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak CS -->
+                <div>
+                    <h4 class="text-xs font-bold tracking-wider text-white uppercase mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400 font-bold">📞</span>
+                            <span>+62 812-8899-7700</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-400 font-bold">✉️</span>
+                            <span>halo@ruangsewa.id</span>
+                        </li>
+                        <li class="text-xs text-gray-500 pt-1">
+                            Layanan Bantuan 7 Hari / Minggu (08:00 - 22:00 WIB)
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                <p>© 2026 RuangSewa. Seluruh hak cipta dilindungi undang-undang.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-gray-300 transition">Ketentuan Penggunaan</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="#" class="hover:text-gray-300 transition">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL 1: BOOKING SLOT (CSS :target) -->
+    <div id="modal-booking-1"
+        class="modal-overlay fixed inset-0 z-50 items-center justify-center p-4 bg-gray-900 bg-opacity-60 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-gray-200">
+            <div class="flex items-start justify-between pb-3 border-b border-gray-100 mb-4">
+                <div>
+                    <span class="text-xs font-semibold text-green-700">Reservasi Lapangan</span>
+                    <h3 class="text-lg font-bold text-gray-900">Giga Futsal Arena Cilandak</h3>
+                </div>
+                <a href="#" class="p-1.5 text-gray-400 hover:text-gray-700 rounded-lg text-lg font-bold">✕</a>
+            </div>
+
+            <form action="#" method="GET" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1.5">Pilih Slot Jam Main</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <label
+                            class="p-2 text-xs rounded-xl font-semibold border border-gray-200 text-gray-800 flex items-center justify-between cursor-pointer">
+                            <input type="radio" name="slot" value="14:00 - 15:00" checked>
+                            <span>14:00 - 15:00</span>
+                        </label>
+                        <label
+                            class="p-2 text-xs rounded-xl font-semibold border border-gray-200 text-gray-800 flex items-center justify-between cursor-pointer">
+                            <input type="radio" name="slot" value="19:00 - 20:00">
+                            <span>19:00 - 20:00</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">Nama Pemesan</label>
+                    <input type="text" required placeholder="Contoh: Dimas Pratama"
+                        class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">Nomor WhatsApp</label>
+                    <input type="tel" required placeholder="Contoh: 081234567890"
+                        class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2 text-sm">
+                </div>
+
+                <button type="submit"
+                    class="w-full py-3 text-sm font-bold text-gray-900 bg-yellow-500 hover:bg-yellow-400 rounded-xl shadow-sm">
+                    Konfirmasi Booking & E-Ticket
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 2: DAFTAR MITRA (CSS :target) -->
+    <div id="modal-mitra"
+        class="modal-overlay fixed inset-0 z-50 items-center justify-center p-4 bg-gray-900 bg-opacity-60 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-gray-200">
+            <div class="flex items-start justify-between pb-3 border-b border-gray-100 mb-4">
+                <h3 class="text-lg font-bold text-gray-900">Daftarkan Lapangan Anda</h3>
+                <a href="#" class="p-1.5 text-gray-400 hover:text-gray-700 rounded-lg text-lg font-bold">✕</a>
+            </div>
+
+            <form action="#" method="GET" class="space-y-3.5">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">Nama Pemilik / Pengelola</label>
+                    <input type="text" required placeholder="Nama lengkap Anda"
+                        class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3 py-2 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">Nama Venue / Arena</label>
+                    <input type="text" required placeholder="Contoh: Arena Futsal Nusantara"
+                        class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3 py-2 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">Nomor WhatsApp</label>
+                    <input type="tel" required placeholder="0812xxxxxxxx"
+                        class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3 py-2 text-sm">
+                </div>
+                <button type="submit"
+                    class="w-full py-2.5 text-sm font-bold text-gray-900 bg-yellow-500 hover:bg-yellow-400 rounded-xl">
+                    Kirim Data Mitra
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
